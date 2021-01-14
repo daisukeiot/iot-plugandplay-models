@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:seeedkk:wioterminal:wioterminal_aziot_example;4",
+  "@id": "dtmi:seeedkk:wioterminal:wioterminal_aziot_example_gps;4",
   "@type": "Interface",
   "@context": "dtmi:dtdl:context;2",
   "displayName": "Seeed Wio Terminal",
@@ -137,6 +137,15 @@
         },
         "schema": "integer"
       }
+    },
+    {
+      "@type": "Telemetry",
+      "name": "gps",
+      "displayName": {
+        "en": "GPS Coordinate",
+        "ja": "GPS 位置情報"
+      },
+      "schema": "point"
     }
   ]
 }
