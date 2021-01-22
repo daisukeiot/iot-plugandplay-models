@@ -6,6 +6,17 @@
   "contents": [
     {
       "@type": [
+        "Property"
+      ],
+      "name": "Light",
+      "displayName": {
+        "en": "Light intensity",
+        "ja": "光量"
+      },
+      "schema": "integer"
+    },
+    {
+      "@type": [
         "Telemetry",
         "Acceleration"
       ],
