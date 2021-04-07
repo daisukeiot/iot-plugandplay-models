@@ -1,0 +1,79 @@
+{
+  "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led;1",
+  "displayName": {
+    "en": "LED on RX65N Target Board"
+  },
+  "description": {
+    "en": "Description for LED"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@type": "Interface",
+  "contents": [
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led:led1;1",
+      "@type": "Property",
+      "name": "led1",
+      "writable": true,
+      "comment": "<Any comment>",
+      "displayName": {
+        "en": "Manufacturer Name"
+      },
+      "description": {
+        "en": "オプションボード上のLED1の設定"
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led:state;1"
+    },
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led:led2;1",
+      "@type": "Property",
+      "name": "led2",
+      "writable": true,
+      "comment": "<Any comment>",
+      "displayName": {
+        "en": "LED 2 State"
+      },
+      "description": {
+        "en": "オプションボード上のLED2の設定"
+      },
+      "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led:state;1"
+    }
+  ],
+  "schemas": [
+    {
+      "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led:state;1",
+      "@type": "Enum",
+      "valueSchema": "integer",
+      "enumValues": [
+        {
+          "name": "On",
+          "displayName": {
+            "en": "LED On"
+          },
+          "enumValue": 1,
+          "description": "LED is turned on.",
+          "comment": "<Any comment>"
+        },
+        {
+          "name": "Off",
+          "displayName": {
+            "en": "LED Off"
+          },
+          "enumValue": 2,
+          "description": "LED is turned Off.",
+          "comment": "<Any comment>"
+        },
+        {
+          "name": "Blink",
+          "displayName": {
+            "en": "LED Blink"
+          },
+          "enumValue": 3,
+          "description": "LED is blinking.",
+          "comment": "<Any comment>"
+        }
+      ]
+    }
+  ]
+}
