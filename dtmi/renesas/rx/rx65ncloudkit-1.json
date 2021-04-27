@@ -85,10 +85,10 @@
       "@type": "Component",
       "name": "LED",
       "displayName": {
-        "en": "Reboot the board"
+        "en": "RX65N Target Board上のLED情報"
       },
       "description": {
-        "en": "Command to reboot the board immediately."
+        "en": "RX65N Target Board上のLED情報"
       },
       "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led;1"
     },
@@ -96,10 +96,10 @@
       "@type": "Component",
       "name": "AmbientLight",
       "displayName": {
-        "en": "Reboot the board"
+        "en": "RX65N Option Board上のアンビエントライトセンサ情報"
       },
       "description": {
-        "en": "Command to reboot the board immediately."
+        "en": "RX65N Option Board上のアンビエントライトセンサ情報"
       },
       "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:als;1"
     }
