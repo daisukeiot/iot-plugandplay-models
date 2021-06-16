@@ -1,10 +1,10 @@
 {
   "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led;1",
   "displayName": {
-    "en": "LED on RX65N Target Board"
+    "en": "LED on RX65N Cloud Option Board"
   },
   "description": {
-    "en": "Description for LED"
+    "en": "Description for LED on RX65N Cloud Option Board"
   },
   "@context": [
     "dtmi:dtdl:context;2"
@@ -14,28 +14,28 @@
     {
       "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led:led1;1",
       "@type": "Property",
-      "name": "led1",
+      "name": "led1_opt",
       "writable": true,
-      "comment": "<Any comment>",
+      "comment": "Property of LED1 on RX65N Cloud Option Board",
       "displayName": {
-        "en": "Manufacturer Name"
+        "en": "LED 1 RX65N Cloud Option Board State"
       },
       "description": {
-        "en": "オプションボード上のLED1の設定"
+        "en": "Property of LED1 on RX65N Cloud Option Board"
       },
       "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led:state;1"
     },
     {
       "@id": "dtmi:renesas:RX:RX65NCloudKit:opt:led:led2;1",
       "@type": "Property",
-      "name": "led2",
+      "name": "led2_opt",
       "writable": true,
-      "comment": "<Any comment>",
+      "comment": "Property of LED2 on RX65N Cloud Option Board",
       "displayName": {
-        "en": "LED 2 State"
+        "en": "LED 2 RX65N Cloud Option Board State"
       },
       "description": {
-        "en": "オプションボード上のLED2の設定"
+        "en": "Property of LED2 on RX65N Cloud Option Board"
       },
       "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led:state;1"
     }
@@ -53,7 +53,7 @@
           },
           "enumValue": 1,
           "description": "LED is turned on.",
-          "comment": "<Any comment>"
+          "comment": "LED is turned on."
         },
         {
           "name": "Off",
@@ -62,7 +62,7 @@
           },
           "enumValue": 2,
           "description": "LED is turned Off.",
-          "comment": "<Any comment>"
+          "comment": "LED is turned Off."
         },
         {
           "name": "Blink",
@@ -71,7 +71,7 @@
           },
           "enumValue": 3,
           "description": "LED is blinking.",
-          "comment": "<Any comment>"
+          "comment": "LED is blinking."
         }
       ]
     }

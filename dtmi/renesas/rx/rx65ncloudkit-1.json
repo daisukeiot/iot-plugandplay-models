@@ -4,7 +4,7 @@
     "en": "RX65N Cloud Kit"
   },
   "description": {
-    "en": "<Description>"
+    "en": "RX65N Cloud Kit"
   },
   "@context": [
     "dtmi:dtdl:context;2"
@@ -16,12 +16,12 @@
       "@type": "Property",
       "name": "manufacturer",
       "writable": false,
-      "comment": "ボードの会社名 'Renesas'",
+      "comment": "Manufacturer Name 'Renesas'",
       "displayName": {
         "en": "Manufacturer Name"
       },
       "description": {
-        "en": "The name of manufacturer of the board. 'Renasas'"
+        "en": "The name of manufacturer of the board. 'Renesas Electronics Corporation'"
       },
       "schema": "string"
     },
@@ -30,7 +30,7 @@
       "@type": "Property",
       "name": "model",
       "writable": false,
-      "comment": "ボードのモデル名. 'RTK5RX65N0S0x000BE'",
+      "comment": "Model Name 'RTK5RX65N0S0x000BE'",
       "displayName": {
         "en": "Model Name"
       },
@@ -44,12 +44,12 @@
       "@type": "Property",
       "name": "processorName",
       "writable": false,
-      "comment": "ボード上のMCU名 'RX65N'",
+      "comment": "MCU Name 'RX65N'",
       "displayName": {
         "en": "MCU Name"
       },
       "description": {
-        "en": "The name of the MCU 'RX64N'"
+        "en": "The name of the MCU 'RX65N'"
       },
       "schema": "string"
     },
@@ -57,12 +57,12 @@
       "@id": "dtmi:renesas:RX:RX65NCloudKit:Reboot;1",
       "@type": "Command",
       "name": "reboot",
-      "comment": "クラウドからデバイスへ即時リブート要求。",
+      "comment": "Reboot the board with the specified delay",
       "displayName": {
         "en": "Reboot the board"
       },
       "description": {
-        "en": "Command to reboot the board immediately."
+        "en": "Command to reboot the board with the specified delay."
       },
       "request": {
         "@type": "CommandPayload",
@@ -85,10 +85,10 @@
       "@type": "Component",
       "name": "LED",
       "displayName": {
-        "en": "RX65N Target Board上のLED情報"
+        "en": "LED on RX65N Cloud Option Board"
       },
       "description": {
-        "en": "RX65N Target Board上のLED情報"
+        "en": "LED on RX65N Cloud Option Board."
       },
       "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:led;1"
     },
@@ -96,10 +96,10 @@
       "@type": "Component",
       "name": "AmbientLight",
       "displayName": {
-        "en": "RX65N Option Board上のアンビエントライトセンサ情報"
+        "en": "Ambient Light Sensor on RX65N Cloud Option Board"
       },
       "description": {
-        "en": "RX65N Option Board上のアンビエントライトセンサ情報"
+        "en": "Ambient Light Sensor on RX65N Cloud Option Board."
       },
       "schema": "dtmi:renesas:RX:RX65NCloudKit:opt:als;1"
     }

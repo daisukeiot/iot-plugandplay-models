@@ -22,7 +22,7 @@
         "en": "Ambient Light"
       },
       "description": {
-        "en": "アンビエント照度（単位：ルーメン）を5秒おきにクラウドへ送信する。"
+        "en": "Send Ambient Light (units:lumen) to Cloud per five seconds."
       },
       "schema": "double",
       "unit": "lumen"

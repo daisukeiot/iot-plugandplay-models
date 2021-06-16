@@ -80,12 +80,20 @@ The tools used to validate the models during the PR checks can also be used to a
 
 ```bash
 curl -L https://aka.ms/install-dmr-client-linux | bash
+
+# Expected SHA checksum
+curl -sL https://aka.ms/install-dmr-client-linux | shasum -b -a 256
+2d1c1ca24943527982ef30f5e8f9716bdbf2ca11407b2af73183453b98d251a0 *-
 ```
 
 #### Windows/Powershell
 
 ```powershell
 iwr https://aka.ms/install-dmr-client-windows -UseBasicParsing | iex
+
+# Expected SHA checksum
+curl -sL https://aka.ms/install-dmr-client-windows | shasum -b -a 256
+0245ae8318e7caf27dd63f3841646f2def3e2ced127ffcb741814be3b063fd7a *-
 ```
 
 #### Update / Uninstall
@@ -189,8 +197,8 @@ There are Azure SDKs available for the models repository in the following langua
 |--------|-------|------|-------|
 |.NET | [Azure.IoT.ModelsRepository](https://www.nuget.org/packages/Azure.IoT.ModelsRepository)|[Source](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository)|[Samples](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/modelsrepository/Azure.IoT.ModelsRepository/samples)|
 |Java |[com.azure/azure-iot-modelsrepository](https://search.maven.org/artifact/com.azure/azure-iot-modelsrepository)|[Source](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/modelsrepository/azure-iot-modelsrepository)|[Samples](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/modelsrepository/azure-iot-modelsrepository/src/samples)|
-|Node|*coming soon*|||
-|Python|*coming soon*|||
+|Node|[@azure/iot-modelsrepository](https://www.npmjs.com/package/@azure/iot-modelsrepository)|[Source](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/iot/iot-modelsrepository)|[Samples](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/iot/iot-modelsrepository/samples/v1)|
+|Python|[azure-iot-modelsrepository](https://pypi.org/project/azure-iot-modelsrepository/)|[Source](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/modelsrepository/azure-iot-modelsrepository)|[Samples](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/modelsrepository/azure-iot-modelsrepository/samples)|
 
 ### Retrieve models without any SDK
 
