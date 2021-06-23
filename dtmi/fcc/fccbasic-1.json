@@ -1,0 +1,36 @@
+{
+  "@id": "dtmi:FCC:basic;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "DE10Nano"
+  },
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "gSensor",
+      "displayName": {
+        "en": "gSensor"
+      },
+      "schema": {
+        "@type":"Object",
+        "fields": [
+          {
+            "name": "x",
+            "schema": "float"
+          },
+          {
+            "name": "y",
+            "schema": "float"
+          },
+          {
+            "name": "z",
+            "schema": "float"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "@id": "dtmi:FCC:RFS;1",
+  "@type": "Interface",
+  "displayName": "RFS Card",
+  "comment": "It's an extended card.",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "lightSensor",
+      "displayName": {
+        "en" : "lightSensor"
+      },
+      "schema": "dtmi:FCC:RFS:lightSensor:schema;1",
+      "comment": "Light Sensor in the daughter(RFS) board"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "mpu9250",
+      "displayName": {
+        "en" : "mpu9250"
+      },
+      "schema": "dtmi:FCC:RFS:mpu9250:schema;1",
+      "comment": "MPU9250 Sensor(9-axis Accelerator) in the daughter(RFS) board"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "humidityTemperatureSensor",
+      "displayName": {
+        "en" : "humidityTemperatureSensor"
+      },
+      "schema": "dtmi:FCC:RFS:humidityTemperatureSensor:schema;1",
+      "comment": "Humidity and Temperature Sensor in the daughter(RFS) board"
+    }
+    ],
+    "schemas": [
+    {
+      "@id": "dtmi:FCC:RFS:lightSensor:schema;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "light0",
+          "schema": "integer"
+        },
+        {
+          "name": "light1",
+          "schema": "integer"
+        }
+      ]
+    },
+    {
+      "@id": "dtmi:FCC:RFS:mpu9250:schema;1",
+      "@type": "Object",
+      "comment": "A:Accelerometer, M:Magnetometer, G:Gyroscope",
+      "fields": [
+        {
+          "name": "a",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "ax",
+                "schema": "float"
+              },
+              {
+                "name": "ay",
+                "schema": "float"
+              },
+              {
+                "name": "az",
+                "schema": "float"
+              }
+            ]
+          }
+        },
+        {
+          "name": "g",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "gx",
+                "schema": "float"
+              },
+              {
+                "name": "gy",
+                "schema": "float"
+              },
+              {
+                "name": "gz",
+                "schema": "float"
+              }
+              ]
+            }
+          },
+        {
+          "name": "m",
+          "schema": {
+            "@type": "Object",
+            "fields": [
+              {
+                "name": "mx",
+                "schema": "float"
+              },
+              {
+                "name": "my",
+                "schema": "float"
+              },
+              {
+                "name": "mz",
+                "schema": "float"
+              }
+              ]
+            }
+          }
+      ]
+    },
+    {
+      "@id": "dtmi:FCC:RFS:humidityTemperatureSensor:schema;1",
+      "@type": "Object",
+      "fields": [
+        {
+          "name": "temperature",
+          "schema": "float"
+        },
+        {
+          "name": "humidity",
+          "schema": "float"
+        }
+      ]
+    }
+    ]
+}

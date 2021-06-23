@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:FCC:withRFS;1",
+  "@type": "Interface",
+  "displayName": "FPGA Cloud Connectivity Kit with RFS Card",
+  "@context": [
+    "dtmi:dtdl:context;2"
+  ],
+  "contents": [
+    {
+        "@type": "Component",
+        "name": "gSensorComponent",
+        "schema": "dtmi:FCC:basic;1",
+        "comment": "DE10Nano Basic Sensor"
+
+    },
+    {
+        "@type": "Component",
+        "name": "rfsSensors",
+        "schema": "dtmi:FCC:RFS;1",
+        "comment": "Extended Card in FPGA Cloud Connectivity Kit"
+    }
+  ]
+}
